@@ -19,7 +19,7 @@ Installation
 ------------
 Simply add the following to your config.yml:  
 
-    - name: 'WeMo'
+    - name: 'Wemo'
     git: 'git://github.com/bobbrodie/siriproxy-wemo.git'
 
 

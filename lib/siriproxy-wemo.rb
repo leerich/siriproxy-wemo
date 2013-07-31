@@ -9,7 +9,7 @@ class SiriProxy::Plugin::Wemo < SiriProxy::Plugin
     #if you have custom configuration options, process them here!
   end
 
-  listen_for (/turn (on|off)(?: the)? (.*)/i) { |action, wemo| send_wemo_command(action, wemo) }
+  listen_for (/turn (on|off)(?: the)? (.*) wemo/i) { |action, wemo| send_wemo_command(action, wemo) }
     
   def send_wemo_command(action, wemo)
     case action

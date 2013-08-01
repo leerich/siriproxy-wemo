@@ -42,7 +42,7 @@ class SiriProxy::Plugin::Wemo < SiriProxy::Plugin
     end
     if wemo_device
       puts device_name + ' ' + device_location.to_s
-      say "Turning #{action} the #{wemo}"
+      say "Turning #{action} the #{wemo} switch"
 
       c = Curl::Easy.new(device_location.to_s + 'upnp/control/basicevent1')
       c.headers["Content-type"] = 'text/xml; charset="utf-8"'
